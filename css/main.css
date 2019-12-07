@@ -97,6 +97,256 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*global styles*/
+@font-face {
+
+    font-family: 'sailboat';
+
+    src: url('../fonts/sailboat-medium.otf') format('opentype');
+}
+@font-face {
+
+    font-family: 'betterlove';
+
+    src: url('../fonts/betterlove-regular.otf') format('opentype');
+}
+@font-face {
+
+    font-family: 'gabriola';
+
+    src: url('../fonts/gabriola.ttf') format('truetype');
+}
+@font-face {
+
+    font-family: 'ebGaramond';
+
+    src: url('../fonts/eb_garamond12-Regular.otf') format('opentype');
+}
+@font-face {
+
+    font-family: 'ebGaramonditalic';
+
+    src: url('../fonts/eb_garamond12-Italic.otf') format('opentype');
+}
+@font-face {
+
+    font-family: 'ebGaramond_smallCaps';
+
+    src: url('../fonts/eb_garamondSC08-Regular.otf') format('opentype');
+}
+
+/*@font-face end*/
+
+html {
+  font-size: 16px;
+}
+body {
+    font-family: 'ebGaramond', 'EB Garamond', serif;
+    font-size: 1em;
+    text-align: center;
+    color: #533b5e;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #533b5e;
+}
+
+#navbar a {
+  color: #dddddb;
+}
+
+#navbar a:hover {
+  color: #533b5e;
+  background-color: #8d78a2;
+}
+
+#navbar a:visited {
+  color: ##83dcc4;
+}
+
+.logo:hover {
+  text-decoration: none;
+  background-color: inherit;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'sailboat', cursive;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'gabriola', 'ebGaramond', 'EB Garamond', serif;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'betterlove', sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+footer {
+  color: #dddddb;
+}
+
+em {
+  font-family: 'ebGaramonditalic', serif;
+  font-style: italic;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 20px 0;
+}
+
+/* end global styles */
+
+   /*---------------------base header & footer---------------------------*/
+
+main {
+  background: url("../img/tannie-designer-main-bg-1x.jpg") center center fixed;
+  background-color: #dddddb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  background-color: #533b5e;
+}
+
+header {
+  padding: 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure img {
+  width: 60%;
+}
+
+header figure.logo:hover {
+  background-color: #533b5e;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+
+header nav, .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'ebGaramond_smallCaps', serif;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+header nav ul li {
+  margin: 10px;
+}
+
+main .hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+main .eye-icon-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+    /*work*/
+main .work {
+  width: 90%;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #fff;
+}
+
+.work {
+    background: url('../img/work-section-bg-1x.png') no-repeat;
+    background-position: bottom right;
+}
+
+
+    /*about*/
+.about-me .profile-pic img{
+  width: 90%;
+  border-radius: 50%;
+}
+
+
+   /*footer*/
+
+footer .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+footer .icons i {
+  color: #dddddb;
+  font-size: 1.5em;
+}
+/* --------------------------Illustration Page------------------------------ */
+
+/* -----------------------------Resume Page--------------------------------- */
 
 /* ==========================================================================
    Helper classes
@@ -187,10 +437,33 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* header */
+
+  /* work */
+  .work {
+      background: url('../img/work-section-bg-2x.png') no-repeat bottom right;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+   /*Desktop styles here*/
+
+   .content-wrapper {
+     max-width: 1366px;
+   }
+
+   .work {
+       background: url('../img/work-section-bg-2x.png') no-repeat bottom right;
+   }
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
@@ -263,4 +536,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

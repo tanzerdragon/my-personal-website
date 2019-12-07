@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Garamond font -->
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/28748d6ffe.js" crossorigin="anonymous"></script>
 
@@ -26,117 +29,158 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+
   <header>
 
       <div class="content-wrapper">
-        <figure class="logo">
-          <a href="#">
-            <img src="img/tanniedesigner-logo-final-2x.png" width="50px" alt="Tannie Designer Brand logo">
+        <figure>
+          <a href="#" class="logo">
+            <img
+            srcset="
+            /img/tanniedesigner-logo-200w-1x.png 200vw,
+            /img/tanniedesigner-logo-400w-2x.png 400vw,
+            /img/tanniedesigner-logo-500w-3x.png 500vw,
+            /img/tanniedesigner-logo-600w-4x.png 600vw,
+            "
+             src="img/tanniedesigner-logo-600w-4x.png" alt="Tannie Designer Brand logo">
           </a>
         </figure>
 
         <div class="header-divider"></div>
 
-        <nav>
-          <ul>
-            <li><a href="#work">Work</a></li>
-            <li><a href="illustration/index.html">Illustration</a></li>
-            <li><a href="#about">About</a></li>
-        </nav>
-
-        <figure>
-          <img src="" alt="">
-        </figure>
-      </div>
+        <div id="navbar" class="navbar">
+          <nav>
+            <ul>
+              <li><a href="#work">Work</a></li>
+              <li><a href="illustration/index.html">Illustration</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </nav>
+        </div>
 
   </header> <!-- header end -->
 
   <main>
     <section class="content-wrapper">
         <div class="hero-area">
-          <h1>Design With Integrity</h1>
+          <div class="eye-icon-header">
+            <img
+            srcset="
+            /img/td-eye-896w-4x.png 896vw,
+            /img/td-eye-650w-3x.png 650vw,
+            /img/td-eye-500w-2x.png 500vw,
+            /img/td-eye-300w-1x.png 300vw,
+            "
+            src="img/td-eye-650w-3x.png" alt="main background image">
+          </div>
+          <!-- added sourceset display options -->
 
-          <h2>Visual Designer with a background in Illustration, possessing skills in branding, logo design, graphic design, concept development, design consultations, and web design.</h2>
-          <p>The initial stages of planning and creating the base elements are some of the most exciting moments of starting any project.</p>
+            <h1>
+              Design With Integrity
+            </h1>
+
+          <h2>
+            Graphic and Visual Designer with a background in Illustration, possessing skills in branding, logo design, graphic design, concept development, design consultations, and web design.
+          </h2>
+          <p>
+            Exceptionally well-executed, best practice designing.
+          </p>
 
         </div>
     </section>
 
-    <section id="work">
-      <h3>Work/Case Studies</h3>
+    <section id="work" class="work">
+
         <div class="content-wrapper">
+          <h2>Work/Case Studies</h2>
 
-          <a href="" >
-            <img srcset="" src="">
-          </a>
-          <h3>
-            <a href="">Jubilee Austin Static One-page HTML Site</a>
-          </h3>
+          <div class="work-gallery">
+            <a href="works/jubileeausten/index.html" target="_blank">
+              <img srcset="" src="">
+            </a>
+            <h3>
+              <a href="works/jubileeausten/index.html" target="_blank">Jubilee Austin Static One-page HTML Site</a>
+            </h3>
 
-          <a href="" >
-            <img srcset="" src="">
-          </a>
-          <h3>
-            <a href="">Holstee Manifesto CSS Design</a>
-          </h3>
+            <a href="" target="_blank">
+              <img srcset="" src="">
+            </a>
+            <h3>
+              <a href="" target="_blank">Holstee Manifesto CSS Design</a>
+            </h3>
 
-          <a href="" >
-            <img srcset="" src="">
-          </a>
-          <h3>
-            <a href="">Rogue Pickings HTML &amp; CSS Website</a>
-          </h3>
+            <a href="" target="_blank">
+              <img srcset="" src="">
+            </a>
+            <h3>
+              <a href="" target="_blank">Rogue Pickings HTML &amp; CSS Website</a>
+            </h3>
 
-          <a href="" >
-            <img srcset="" src="">
-          </a>
-          <h3>
+            <a href="" target="_blank">
+              <img srcset="" src="">
+            </a>
+            <h3>
 
-            <a href="">Lol-Cat Clock Javascript</a>
-          </h3>
-          <a href="" >
-            <img srcset="" src="">
-          </a>
-          <h3>
-            <a href="">Magic 8-Ball Javascript</a>
-          </h3>
+              <a href="">Lol-Cat Clock Javascript</a>
+            </h3>
+            <a href="" >
+              <img srcset="" src="">
+            </a>
+            <h3>
+              <a href="">Magic 8-Ball Javascript</a>
+            </h3>
 
-          <a href="" >
-            <img srcset="" src="">
-          </a>
-          <h3>
-            <a href="">Steep&Iota;Brew Full Brand Design</a>
-          </h3>
+            <a href="" >
+              <img srcset="" src="">
+            </a>
+            <h3>
+              <a href="">Steep&Iota;Brew Full Brand Design</a>
+            </h3>
 
-          <a href="" >
-            <img srcset="" src="">
-          </a>
-          <h3>
-            <a href="">Unplugged - "Mobile First" RWD with HTML5 &amp; CSS3</a>
-          </h3>
+            <a href="" >
+              <img srcset="" src="">
+            </a>
+            <h3>
+              <a href="">Unplugged - "Mobile First" RWD with HTML5 &amp; CSS3</a>
+            </h3>
 
-          </a>
+            </a>
+          </div>
 
         </div>
-
     </section>
 
-  </main> <!-- main end -->
-
-  <footer>
     <section id="about">
       <div class="content-wrapper">
         <div class="footer-content">
             <div class="about-me">
               <div class="profile-pic">
                 <figure>
-                  <img src="2019-profile-pic-2x.png" alt="tannie's profile photo">
+                  <img src="img/2019-profile-pic-2x.png" alt="tannie's profile photo">
                 </figure>
-                <h5>My Resume</h5>
+                <figcaption>
+                  <a href="" target="_parent">My Resume</a>
+                </figcaption>
               </div>
 
               <div class="about-profile">
                   <p>
+                    <p><b>integrity</b>[ in-teg-ri-tee ] <i> noun</i>
+                      <ol>
+                        <li>
+                            adherence to moral and ethical principles; soundness of moral character; honesty.
+          	               <em>Perfunctory is a dissuasion to a passionate life; integrity is the true meaning of living life simply and honestly, with the intention to do good in one’s self and other’s interests in every aspect. </em>
+                       </li>
+                        <li>
+                            the state of being whole, entire, or undiminished:
+          	                 <em> to preserve the integrity of the overall Brand’s image.</em>
+                       </li>
+                        <li>
+                            a sound, unimpaired, or perfect condition:
+          	                 <em> One can expect one’s designs to be in full integrity.</em>
+                       </li>
+                     </ol>
+                    </p>
                     What is “design with integrity”? It means, to design with a purpose and to never compromise on the critical details. A promise of good work ethics, on-time deliverables,
                     My name is Tannie Duong (T+Annie, Yeuong, there are two d's in the Vietnamese alphabet, that are "hard" and "soft" in pronunciation. Blame it on the French as they say...).
                     My true passion in life has always been designing and curating imagery that matches lives or lifestyles, bringing out
@@ -146,11 +190,16 @@
                     I'm a web designer with a decent knowledge in HTML5, CSS3, and basic Javascript. I can help you design a wireframe and code up a static html website.
                   </p>
                   <p>
-                    In the end, I just want to help in creating a great project with great people.
+                    My end goal is simply to help in creating a great project(s) with great people.
                   </p>
               </div>
             </div> <!-- about profile end -->
+</section>
 
+  </main> <!-- main end -->
+
+  <footer>
+      <section class="content-wrapper">
             <div class="social">
               <h4>Let's Connect!</h4>
 
@@ -168,7 +217,9 @@
                 <p>
                   <a href="" target="_blank">
                     <i class="fab fa-instagram"></i>
+                  </a>
                 </p>
+
                 <p>
                     <a href="https://" target="_blank">
                       <i class="fab fa-linkedin-in"></i>
@@ -188,8 +239,10 @@
 
     <div class="copyright">
       <p>Copyright &copy;2012&#8211;<script>document.write(new Date().getFullYear())</script> Tannie Duong; All Rights Reserved. Affiliate and client projects may be subject to their own copyrights.</p>
+    </div>
 
   </footer> <!-- end footer -->
+
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -203,6 +256,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>
