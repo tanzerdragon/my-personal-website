@@ -187,7 +187,7 @@ h1 {
 
 h2 {
   font-family: 'gabriola', 'ebGaramond', 'EB Garamond', serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 h3 {
@@ -198,6 +198,7 @@ h3 {
 
 footer {
   color: #dddddb;
+  background: none;
 }
 
 em {
@@ -214,27 +215,17 @@ em {
 
    /*---------------------base header & footer---------------------------*/
 
-main {
-  background: url("../img/tannie-designer-main-bg-1x.jpg") center center fixed;
-  background-color: #dddddb;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
 header,
 footer {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  background-color: #533b5e;
 }
 
 header {
   padding: 0;
+  background-color: #533b5e;
 }
 
 header .content-wrapper {
@@ -293,6 +284,18 @@ header nav ul li {
   margin: 10px;
 }
 
+ /* main + work + about sections */
+
+ main {
+   background: url("../img/tannie-designer-main-bg-1x.jpg") center center fixed;
+   background-color: #dddddb;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   flex-flow: row wrap;
+ }
+
 main .hero-area {
   display: flex;
   justify-content: center;
@@ -304,10 +307,10 @@ main .eye-icon-header {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 80%;
+  width: 70%;
+  opacity: 50%;
 }
 
-    /*work*/
 main .work {
   width: 90%;
   margin: 10px 0;
@@ -321,30 +324,76 @@ main .work {
 .work {
     background: url('../img/work-section-bg-1x.png') no-repeat;
     background-position: bottom right;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
+.work h2 {
+  margin-bottom: 30px;
+}
 
-    /*about*/
-.about-me .profile-pic img{
+.work article {
   width: 90%;
-  border-radius: 50%;
+  margin: 10px 0;
 }
 
+.work .work-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-   /*footer*/
+.work .work-thumbnails img {
+  width: 80%;
+  box-shadow: 2px 2px 4px #bbb;
+}
 
-footer .icons {
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.about-me .profile-pic img{
+  width: 75%;
+  border-radius: 50%;
+  border: solid #533b5e;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.social-icons .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
-footer .icons i {
-  color: #dddddb;
+.social-icons .icons i {
   font-size: 1.5em;
 }
+
+.copyright {
+  background-color: #533b5e;
+}
+
 /* --------------------------Illustration Page------------------------------ */
+
+main .ill-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 90%;
+}
+
 
 /* -----------------------------Resume Page--------------------------------- */
 
@@ -440,17 +489,134 @@ footer .icons i {
 @media screen and (min-width: 768px) {
   /*Tablet styles here*/
 
-  .content-wrapper {
-    max-width: 640px;
-    margin: 100px 0;
+  h1 {
+    font-size: 3.5em;
   }
 
-  /* header */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 60px 0;
+  }
+
+
+  /* header & footer */
+  header {
+    justify-content: space-around;
+    height: 75px;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    height: 75px;
+  }
+
+  header figure {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    }
+
+  header figure img {
+    width: 40%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav, .navbar {
+    width: 78%;
+    align-items: flex-start;
+    height: 75px;
+    justify-content: center;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+    flex-flow: row nowrap;
+  }
+
+  main {
+    background: url("../img/tannie-designer-main-bg-2x.png") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  main .eye-icon-header {
+    width: 40%;
+  }
+
+  main .statement p {
+    font-size: 1.125em;
+  }
+
+  .hero-area-divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+  }
 
   /* work */
   .work {
       background: url('../img/work-section-bg-2x.png') no-repeat bottom right;
   }
+
+  .work .content-wrapper {
+    margin: 20px 0;
+  }
+
+  .work article {
+    width: 40%;
+    height: 250px;
+  }
+
+  .work .work-gallery {
+    justify-content: space-around;
+  }
+
+  /* about */
+  .about {
+    width: 90%;
+  }
+
+  .about .content-wrapper {
+    width: 100%;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  .about .profile-pic {
+    width: 40%;
+  }
+
+  .about figure {
+    margin: 10px;
+  }
+
+  .about-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 85%;
+    line-height: 1.125em;
+  }
+
+  .social-icons {
+    width: 40%;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {

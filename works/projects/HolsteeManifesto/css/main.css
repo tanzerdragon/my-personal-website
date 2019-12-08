@@ -1,0 +1,165 @@
+/** Holstee **/
+
+body {
+	background-color: #cab2bf;
+	font-family: 'Lora', serif;
+	text-transform: uppercase;
+	padding: 50px 0px;
+	margin: auto;
+	color: #40323a;
+	width: max-content;
+      }
+
+h1 {
+	color: #3e3439;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 48pt;
+	font-family: 'Berkshire Swash', cursive;
+	text-transform: none;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	position: relative;
+}
+.main-content {
+
+	width: 520px;
+	border: 5px dotted purple;
+	margin: 0;
+	padding: 40px;
+}
+
+.frame {
+	width:450px;
+	margin: auto 0px;
+	padding: 0;
+}
+
+.wrapper {
+	width: 960px;
+	height: 90px;
+    margin: auto;
+    padding:0;
+	position: relative;
+	text-align: justify;
+      }
+
+.wrapper2 {
+	width: 285px;
+	height: 80px;
+  margin: auto;
+  padding:0;
+	position: relative;
+	text-align: justify;
+	float:left;
+
+}
+
+.wrapper2right {
+	width: 235px;
+	height: 80px;
+  margin: auto;
+  padding:0;
+	float:left;
+
+}
+
+.openyourmind {
+	float: left;
+	clear: both;
+}
+
+.wrapper3 {
+	width: 300px;
+	height: 36px;
+    margin: auto;
+    padding:0;
+	position: relative;
+	text-align: left;
+	float:left;
+	clear: both;
+}
+p.p1 {
+  font-weight: 400;
+	width: 70%;
+  line-height: 30px;
+  word-spacing: 10px;
+  margin-bottom: -5px;
+  clear: both;
+}
+
+span {
+  margin:0;
+	padding:0;
+}
+.bite {
+	font-size:21px;
+	text-align: right;
+}
+.s1 {
+	font-size:12px;
+	line-height: 5px;
+	margin: 5px;
+}
+.s2 {
+	font-size:18px;
+	line-height: 80%
+}
+.s3 {
+  font-size: 23px;
+	word-spacing:1px;
+	line-height:20px;
+}
+.s4 {
+	font-size: 20px;
+}
+.s5 {
+	font-size: 28px;
+	text-align: left;
+}
+.s10 {
+	font-size: 29px;
+	word-spacing: -4px;
+}
+.s6 {
+	font-size:38px;
+}
+.s7 {
+	font-size:30px;
+}
+.s8 {
+	font-size:50px;
+	line-height:40px;
+}
+.s9 {
+	font-size:28px;
+	letter-spacing:-1px;
+}
+.LIFE {
+	color: #2f1168;
+	text-transform: capitalize;
+	font-size: 110px;
+	font-family:'Great Vibes', cursive;
+  font-weight: 400;
+  float: right;
+	line-height: 100px;
+	margin-left: -50px;
+	width:55%;
+
+}
+.short
+{
+	margin: 18px;
+	font-size: 72px;
+	color: #2f1168;
+	font-family:'Great Vibes', cursive;
+	text-transform: none;
+	text-align: center;
+  font-weight: 400;
+	line-height: 58px;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	width:38%;
+	height: 72px;
+	float: left;
+}
