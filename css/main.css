@@ -307,7 +307,7 @@ main .eye-icon-header {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 70%;
+  width: 60%;
   opacity: 50%;
 }
 
@@ -382,6 +382,7 @@ main .work {
 
 .copyright {
   background-color: #533b5e;
+  width: 100%;
 }
 
 /* --------------------------Illustration Page------------------------------ */
@@ -577,14 +578,15 @@ main .ill-title {
     height: 250px;
   }
 
+  .work .work-thumbnails img {
+    width: 95%;
+  }
+
   .work .work-gallery {
     justify-content: space-around;
   }
 
   /* about */
-  .about {
-    width: 90%;
-  }
 
   .about .content-wrapper {
     width: 100%;
@@ -623,13 +625,87 @@ main .ill-title {
    /*Desktop styles here*/
 
    .content-wrapper {
-     max-width: 1366px;
+     max-width: 1200px;
    }
+
+/* header & footer */
+
+  header {
+    height: 65px;
+  }
+
+  header .content-wrapper {
+    height: 65px;
+  }
+
+  header figure {
+    width: 10%;
+    height: 65px;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  header nav, .navbar {
+    height: 65px;
+  }
+
+  /* main */
+
+  main {
+    background: url("../img/tannie-designer-main-bg-4x.png") top center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  main .eye-icon-header {
+    width: 30%;
+  }
+
+  main .work {
+    width: 75%;
+  }
 
    .work {
        background: url('../img/work-section-bg-2x.png') no-repeat bottom right;
    }
+
+   .work article {
+     height: auto;
+   }
+
+   .work .work-gallery {
+     width: 100%;
+   }
+
+   .work-gallery article {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-flow: row wrap;
+     width: 30%;
+   }
+
+   .work .work-thumbnails img {
+     width: 100%;
+   }
+
 }
+
+@media screen and (min-width: 1366px) {
+   /*Larger Desktop styles!!*/
+
+   main {
+     background: url("../img/tannie-designer-main-bg-4x.png") top center fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+   } /* So there is no pixelated backgrounds like my monitor :P */
+
+ }
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
