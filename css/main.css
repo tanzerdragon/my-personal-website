@@ -311,6 +311,8 @@ main .eye-icon-header {
   opacity: 50%;
 }
 
+/* moin works section */
+
 main .work {
   width: 90%;
   margin: 10px 0;
@@ -350,6 +352,8 @@ main .work {
   box-shadow: 2px 2px 4px #bbb;
 }
 
+/* about section */
+
 .about {
   display: flex;
   justify-content: center;
@@ -363,24 +367,24 @@ main .work {
   border: solid #533b5e;
 }
 
-.social-icons {
+main .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
 }
 
-.social-icons .icons {
+main .social-icons .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.social-icons .icons i {
+main .social-icons .icons i {
   font-size: 1.5em;
 }
 
-.copyright {
+footer .copyright {
   background-color: #533b5e;
   width: 100%;
 }
@@ -394,6 +398,97 @@ main .ill-title {
   flex-flow: row wrap;
   width: 90%;
 }
+
+.ill-portfolio-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.ill-portfolio-iframe iframe {
+  width: 100%;
+  height: 800px;
+}
+/* --------------------------- Gallery Pages ---------------------------------*/
+
+main .gallery-pages {
+  background: url('..img/work-gallery-bg.png') center center fixed;
+  background-color: #dddddb;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .back-button {
+  margin: 100px;
+}
+
+main .description-box {
+  background: #fff url('../img/work-section-bg-1x.png') no-repeat;
+  background-position: bottom right;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+
+/* Steep | Brew Project page */
+
+.work-gallery-main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.steep-brew-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.main-steepbrew-logo img{
+  width: 100%;
+}
+
+.steepbrew-logos-lineup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+.steepbrew-logos-lineup figure {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+
+.steepbrew-logos-lineup img {
+  width: 100%;
+}
+.contents-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.contents-two figure img{
+  width: 100%;
+}
+
 
 
 /* -----------------------------Resume Page--------------------------------- */
@@ -618,11 +713,65 @@ main .ill-title {
   .social-icons {
     width: 40%;
   }
+/* ---------------------- Work Gallery Pages -------------------------------*/
+  main .description-box {
+    background: url('../img/work-section-bg-1x.png') no-repeat;
+    background-position: bottom right;
+    background-color: #fff;
+  }
 
-}
+  main .back-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    width: 80%;
+  }
+
+  /*Steep|Brew Project Page*/
+  main .gallery-pages {
+    width: 100%;
+  }
+
+  main .work-gallery-main-body {
+    width: 90%;
+  }
+
+
+  main .main-steepbrew-logo {
+    width: 100%;
+    margin: 0;
+  }
+
+  main .gallery-pages figure {
+    margin: 0;
+  }
+
+  .steepbrew-logos-lineup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  .steepbrew-logos-lineup figure {
+    width: 100%;
+    margin: 10px;
+  }
+  .steepbrew-logos-lineup img {
+    width: 100%;
+  }
+
+  .contents-two figure img {
+    width: 80%;
+  }
 
 @media screen and (min-width: 1200px) {
    /*Desktop styles here*/
+   h4 {
+     font-size: 2em;
+   }
 
    .content-wrapper {
      max-width: 1200px;
@@ -660,13 +809,12 @@ main .ill-title {
     background-size: cover;
   }
 
-
   main .eye-icon-header {
     width: 30%;
   }
 
   main .work {
-    width: 75%;
+    width: 65%;
   }
 
    .work {
@@ -693,6 +841,53 @@ main .ill-title {
      width: 100%;
    }
 
+/* ---------------------- Illustration Page ---------------------------------*/
+
+main .ill-title {
+  flex-flow: column;
+}
+
+/* ---------------------- Work Gallery Pages -------------------------------*/
+  main .description-box {
+    background: #fff url('../img/work-section-bg-2x.png') no-repeat bottom right;
+    width: 80%;
+    font-size: 1.25em;
+  }
+
+  main .main-steepbrew-logo {
+    width: 90%;
+  }
+
+  .steepbrew-logos-lineup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 85%;
+  }
+
+  .steepbrew-logos-lineup figure {
+    width: 80%;
+  }
+
+  .contents-two {
+    width: 90%;
+  }
+
+  .contents-two .gallery2-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contents-two figure {
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -704,6 +899,10 @@ main .ill-title {
      background-size: cover;
    } /* So there is no pixelated backgrounds like my monitor :P */
 
+   main .description-box {
+     background: #fff url('../img/work-section-bg.png') no-repeat;
+     background-position: 80% 30%;
+   }
  }
 
 @media print,
