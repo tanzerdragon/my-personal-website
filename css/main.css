@@ -287,7 +287,7 @@ header nav ul li {
  /* main + work + about sections */
 
  main {
-   background: url("../img/tannie-designer-main-bg-1x.jpg") center center fixed;
+   background: url("../img/tannie-designer-main-bg-1x.png") center center fixed;
    background-color: #dddddb;
    background-size: cover;
    background-repeat: no-repeat;
@@ -307,8 +307,12 @@ main .eye-icon-header {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 60%;
+  width: 45%;
   opacity: 50%;
+}
+
+.eye-icon-header img {
+  width: 100%;
 }
 
 /* moin works section */
@@ -371,7 +375,7 @@ main .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70%;
 }
 
 main .social-icons .icons {
