@@ -145,6 +145,7 @@ body {
     font-size: 1em;
     text-align: center;
     color: #533b5e;
+    background-color: #533b5e;
 }
 
 ul {
@@ -194,6 +195,11 @@ h3 {
   font-family: 'betterlove', sans-serif;
   font-size: 1.5em;
   font-weight: normal;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-style: normal;
 }
 
 footer {
@@ -371,20 +377,31 @@ main .work {
   border: solid #533b5e;
 }
 
-main .social-icons {
+main .connection {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width:100%;
 }
 
-main .social-icons .icons {
+.email-phone img {
+  width: 6%;
+}
+
+.icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .social-icons .icons i {
+.icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+main .connection .icons i {
   font-size: 1.5em;
 }
 
@@ -408,13 +425,21 @@ main .ill-title {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 700px;
-  overflow: hidden;
+}
+
+.scroller {
+  height: 50vh;
+  width: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch;
 }
 
 .ill-portfolio-iframe iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
 /* --------------------------- Gallery Pages ---------------------------------*/
 
@@ -440,7 +465,7 @@ main .description-box {
 }
 
 
-/* Steep | Brew Project page */
+/*------------------- Steep | Brew Project page ---------------------*/
 
 .work-gallery-main-body {
   display: flex;
@@ -714,9 +739,19 @@ main .description-box {
     line-height: 1.125em;
   }
 
-  .social-icons {
-    width: 40%;
+  main .connection {
+    width: 60%;
   }
+
+  .email-phone img {
+    width: 1.4em;
+  }
+/*------------------------Illustration Page ---------------------------------*/
+
+  .ill-portfolio-iframe iframe {
+    height: 65vh;
+  }
+
 /* ---------------------- Work Gallery Pages -------------------------------*/
   main .description-box {
     background: url('../img/work-section-bg-1x.png') no-repeat;
@@ -773,9 +808,6 @@ main .description-box {
 
 @media screen and (min-width: 1200px) {
    /*Desktop styles here*/
-   h4 {
-     font-size: 2em;
-   }
 
    .content-wrapper {
      max-width: 1200px;
@@ -845,10 +877,31 @@ main .description-box {
      width: 100%;
    }
 
+     .about {
+       width: 70%;
+     }
+
+     main .connection {
+       width: 40%;
+     }
+
+     .email-phone {
+       line-height: 1.2em;
+     }
+
+
 /* ---------------------- Illustration Page ---------------------------------*/
 
 main .ill-title {
   flex-flow: column;
+}
+.scroller {
+  height: 700px;
+  overflow: auto;
+}
+
+.ill-portfolio-iframe iframe {
+  height: 100vh;
 }
 
 /* ---------------------- Work Gallery Pages -------------------------------*/
@@ -906,6 +959,10 @@ main .ill-title {
    main .description-box {
      background: #fff url('../img/work-section-bg.png') no-repeat;
      background-position: 80% 30%;
+   }
+
+   .about {
+     width: 100%;
    }
  }
 
