@@ -1,0 +1,3 @@
+[submodule "jubilee"]
+	path = jubilee
+	url = https://github.com/tanzerdragon/jubilee.git
